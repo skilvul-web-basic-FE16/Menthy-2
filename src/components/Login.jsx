@@ -15,7 +15,6 @@ function Login({ fetchUsers, userData }) {
   }, []);
 
   const handleLogin = (e) => {
-    e.preventDefault();
     console.log(email, password);
     const a = userData.find(
       (data) => data.email == email && data.password == password
